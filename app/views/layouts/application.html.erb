@@ -2,7 +2,7 @@
 <html>
   <head>
 
-    <title>真·24K Offer</title>
+    <title>Fullstack Careers</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -16,8 +16,9 @@
           <%= render "common/navbar" %>
         </div>
 
-        <%= render "common/flashes" %>
-        <%= yield %>
+          <div style="margin-top:50px;">
+            <%= yield %>
+          </div>
       </div>
 
       <%= render "common/footer"%>

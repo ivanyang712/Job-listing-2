@@ -21,36 +21,38 @@
 
 
  .jumbotron {
-   background-image:url('http://fullstack-public.oss-cn-qingdao.aliyuncs.com/2017-04-15-542213.png');
+   height: 500px;
+   background-image:url('https://image.ibb.co/miPhAk/welcome.jpg');
    background-repeat: no-repeat;
    background-size: cover;
    padding-bottom: 110px;
  }
 
   .jumbotron h1, .jumbotron .h1 {
+      //font-family: "Hevitica";
       text-align: left;//文字左对齐
-      color: #222;  //字体颜色
+      color: white;  //字体颜色
 
-      padding: 50px 20px 0;//上50px，左右20px，下0
+      padding: 10px 10px 0;//上50px，左右20px，下0
   }
 
    .jumbotron p {
        margin: 0;//上下左右margin为0
        font-size: 26px;//字体大小
-       max-width: 500px;//最大宽度
-       background-color: rgba(250, 250, 250, 0.39);//背景颜色含透明度
+       max-width: 600px;//最大宽度
+       background-color: rgba(0, 0, 0, 0.39);//背景颜色含透明度
        padding: 20px;//上下左右padding为20px
        text-align:left;//文字左对齐
-       color: #222;//字体颜色
+       color: white;//字体颜色
 
        border-bottom-right-radius: 3px;//右下角圆边
        border-bottom-left-radius: 3px;//左下角圆边
    }
 
  .title {
-     background-color: rgba(250, 250, 250, 0.39);//背景颜色含透明度
-     max-width: 500px;//最大宽度
-     margin-top: 200px;//和顶部拉开距离
+     background-color: rgba(0, 0, 0, 0.39);//背景颜色含透明度
+     max-width: 600px;//最大宽度
+     margin-top: 20px;//和顶部拉开距离
      margin-bottom: 0;//这样就可以紧接息面的描述文字
      border-top-right-radius: 3px;//右上角圆边
      border-top-left-radius: 3px;//左上角圆边
@@ -67,19 +69,35 @@
  .lead {
    margin-bottom: 60px;
    text-align: center;
-   color: white;
+   color: #2196F3 !important;
  }
 
  .caption {
-   margin: 30px;
-   text-align: center;
-   top: 20px;
+   margin: 0px;
+   text-align: Left;
+   top: 10px;
  }
 
  .thumbnail {
      border: 0 none;
      box-shadow: none;
      margin-top: 60px;
+ }
+
+ .jobdesc {
+   margin-top: 0px;
+   margin-bottom: 10px;
+   text-align: left;
+   color: black;
+   top: 12px;
+ }
+
+ .link {
+   margin-top: 0px;
+   margin-bottom: 10px;
+   text-align: left;
+   color: #2196F3;
+   top: 12px;
  }
 
  .custab{
@@ -112,10 +130,11 @@
  }
 
   .navbar-default .navbar-brand {
-    color: #EF6C00; //字体颜色
+    color: #FBC02D; //字体颜色
 
     padding: 10px 15px; //上下10px，左右15px
     line-height: 30px; //文字行高
+
   }
 
   .navbar-default .navbar-brand:hover,
@@ -126,7 +145,7 @@
   }
 
    .navbar-default .navbar-nav > li > a{
-     color: #EF6C00;
+     color: #FBC02D;
 
    }
 
@@ -161,20 +180,17 @@
         height: 32px; //定制图片高度
     }
 
+    .navbar-fixed-top {
+        top: 0px;
+    }
 
-     .navbar-default .navbar-brand {
-       color: #EF6C00; //字体颜色
-
-       padding: 10px 15px; //上下10px，左右15px
-       line-height: 30px; //文字行高
-     }
-
-     .navbar-default .navbar-brand:hover,
-     .navbar-default .navbar-brand:focus {
-       color: #FF6F00; //鼠标放置在链接上的文字颜色
-
-       background-color: transparent; //鼠标放置在链接上的背景颜色，这里设为透明
-     }
+    .navbar-fixed-top, .navbar-fixed-bottom {
+        position: fixed;
+        top: 0px;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+    }
 
  .container-fluid .jumbotron{
    padding-bottom: 110px;//内部的底部边距，这样按钮不会很靠近底部了
@@ -183,18 +199,18 @@
  }
 
   .btn-danger {
-      color: #fff;//字体颜色
+      color: white;//字体颜色
 
-      background-color: #EF6C00;//背景颜色
+      background-color: #2196F3;//背景颜色
 
-      border-color: #EF6C00;//边框颜色
+      border-color: #2196F3;//边框颜色
 
   }
 
   .btn-danger:hover {
-      background-color: #E65100;//鼠标放置在btn上的背景颜色
+      background-color: #FFC107;//鼠标放置在btn上的背景颜色
 
-      border-color: #E65100;//鼠标放置在btn上的边框颜色
+      border-color: #FFC107;//鼠标放置在btn上的边框颜色
 
   }
 
@@ -202,7 +218,7 @@
        padding: 8px 16px;//通过padding来决定btn的大小
        font-size: 20px;//btn文字大小
        letter-spacing: 3px;//调整文字间距
-       border-radius: 3px;//btn圆角
+       border-radius: 5px;//btn圆角
        width: 200px;//这里用指定宽度把btn拉得更长
    }
 
@@ -302,3 +318,28 @@
    .login-help{
      font-size: 12px;
    }
+
+   .footer {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      /* Set the fixed height of the footer here */
+      height: 80px;
+      background-color: #222222;
+      margin: 0px;
+
+      p {
+         color: white;
+        margin-top: 20px;
+      }
+     }
+
+     html {
+        position: relative;
+        min-height: 100%;
+      }
+
+      body {
+        /* Margin bottom by footer height */
+        margin-bottom: 100px;
+      }
