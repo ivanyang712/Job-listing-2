@@ -64,18 +64,7 @@
    text-align: center;
    color: white;
    top: 12px;
- }
 
- .lead {
-   margin-bottom: 60px;
-   text-align: center;
-   color: #2196F3 !important;
- }
-
- .caption {
-   margin: 0px;
-   text-align: Left;
-   top: 10px;
  }
 
  .thumbnail {
@@ -142,6 +131,7 @@
     color: #FF6F00; //鼠标放置在链接上的文字颜色
 
     background-color: transparent; //鼠标放置在链接上的背景颜色，这里设为透明
+
   }
 
    .navbar-default .navbar-nav > li > a{
@@ -171,13 +161,14 @@
 
      color: #212121;
 
+
    }
 
     .navbar-brand > img {
         display: inline-block; //图片和链接文字显示在同一行
         margin-right: 10px; //图片和链接文字拉开一点距离
-        width: 32px; //定制图片宽度
-        height: 32px; //定制图片高度
+        width: 20px; //定制图片宽度
+        height: 20px; //定制图片高度
     }
 
     .navbar-fixed-top {
@@ -342,4 +333,28 @@
       body {
         /* Margin bottom by footer height */
         margin-bottom: 100px;
+      }
+
+      //---------Content---------
+
+      .content-section-a {
+          padding: 50px 0;
+          background-color: #f8f8f8;
+      }
+
+      .content-section-b {
+          padding: 50px 0;
+          border-top: 1px solid #e7e7e7;
+          border-bottom: 1px solid #e7e7e7;
+      }
+
+      .section-heading-spacer {
+          float: left;
+          width: 200px;
+          border-top: 3px solid #e7e7e7;
+      }
+
+      .section-heading {
+          margin-bottom: 30px;
+
       }
